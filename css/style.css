@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0E8196;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: white;
+}
+
+.contact-btn {
+    border: 2px solid #ffcc00;
+    padding: 8px 25px;
+    border-radius: 25px;
+    color: #ffcc00 !important;
+    font-weight: bold;
+}
+
+.contact-btn:hover {
+    background-color: #ffcc00;
+    color: #008094 !important;
+}
+
+/* === MOBILE FIXES === */
+@media (max-width: 768px) {
+
+    /* убираем жёсткие отступы */
+    [style*="margin-left: 110px"] {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    /* баннер */
+    .position-absolute.start-50.top-50.translate-middle {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* карточки товаров */
+    .row.align-items-center.justify-content-center>.col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .row.align-items-center.justify-content-center>.col-1 {
+        display: none;
+    }
+
+    /* explore section */
+    .container-xl .row>.col {
+        margin-bottom: 2rem;
+    }
+
+    .d-flex {
+        flex-direction: column !important;
+    }
+
+    /* instagram */
+    .container-xl .d-flex.justify-content-center img {
+        width: 100%;
+    }
+
+    /* newsletter */
+    input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    /* footer */
+    .bg-black .row>div {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+}

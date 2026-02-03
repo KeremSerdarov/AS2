@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/fonts/bootstrap-icons.woff">
+    <link rel="stylesheet" href="css/fonts/bootstrap-icons.woff2">
+    <link rel="stylesheet" href="css/icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+</head>
+<style>
+    /* === MOBILE FIXES === */
+    @media (max-width: 768px) {
+
+        /* убираем жёсткие отступы */
+        [style*="margin-left: 110px"] {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+
+        /* баннер */
+        .position-absolute.start-50.top-50.translate-middle {
+            width: 90%;
+            text-align: center;
+        }
+
+        /* карточки товаров */
+        .row.align-items-center.justify-content-center>.col {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .row.align-items-center.justify-content-center>.col-1 {
+            display: none;
+        }
+
+        /* explore section */
+        .container-xl .row>.col {
+            margin-bottom: 2rem;
+        }
+
+        .d-flex {
+            flex-direction: column !important;
+        }
+
+        /* instagram */
+        .container-xl .d-flex.justify-content-center img {
+            width: 100%;
+        }
+
+        /* newsletter */
+        input {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        /* footer */
+        .bg-black .row>div {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+    }
+</style>
+<style>
+    /* Настройки для мобильных (по умолчанию) */
+    .adaptive-text {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* Настройки для компьютеров (экраны шире 768px) */
+    @media (min-width: 768px) {
+        .adaptive-text {
+            text-align: left;
+            /* Или 'initial', если нужно сбросить в стандартное */
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark px-3" style="background-color: #0E8196;">
+        <div class="logo">
+            <span class="icon">📈</span> <span class="logo-text">Digital Trend</span>
+        </div>
+
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+            <ul class="navbar-nav align-items-lg-center gap-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Studio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-warning rounded-pill px-4" href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="" style="background-color: #06798C;">
+        <div class="container-lg text-white pt-5">
+            <div class="row pt-3 justify-content-center text-center text-lg-start">
+                <div class="col-lg-5 pt-4" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="h1 pb-2 pt-5" style="line-height: 47px;">
+                        We are ready for your <br> digital marketing
+                    </div>
+                    <div>
+                        <button style="color: #06798C;" class="btn-lg border rounded-5 bg-white px-4 py-2">Let us
+                            discuss together!</button>
+                    </div>
+                    <div class="ps-lg-4 pt-3">
+                        <i class="bi bi-telephone-fill"></i>
+                        +99 080 070 4224
+                    </div>
+                </div>
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
+                    <a href="img/working-girl.png" class="" data-fancybox="gallery" data-caption="XS Max">
+                        <img src="img/working-girl.png" class="w-100" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div class="h3 pt-5">
+                    the best <span class="text-warning">Digital Marketing <br> agency</span> in Rio de Janeiro
+                </div>
+                <div class="py-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe, corrupti magni nihil minus
+                    maxime minima perspiciatis veniam.
+                </div>
+                <div>
+                    Lorem ipsum <span class="text-warning">allowed</span> sit amet consectetur adipisicing elit. Commodi
+                    mollitia debitis fuga sunt quam,
+                    atque
+                    adipisci eius vitae quas at qui rerum cum odit numquam suscipit dicta molestiae animi in.
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <a href="img/office.png" class="" data-fancybox="gallery" data-caption="XS Max">
+                    <img src="img/office.png" class="w-100" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #F0F7FD;">
+        <div class="container-fluid pt-5 pb-5" data-aos="fade-down" data-aos-duration="1000">
+            <div class="h3 text-center pt-5">
+                Please take a look through our
+            </div>
+            <div class="h3 text-center text-warning">
+                featured Digital Trends
+            </div>
+            <div class="splide pb-5" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="position-relative overflow-hidden m-3">
+                                <a href="img/project/project-image01.jpg" class="" data-fancybox="gallery"
+                                    data-caption="XS Max">
+                                    <img src="img/project/project-image01.jpg" class="w-100 d-block"
+                                        alt="Project Image">
+                                </a>
+                                <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 bg-white p-4 shadow-lg"
+                                    style="width: 90%; max-width: 550px; border-radius: none; min-height: 20px;">
+                                    <div class="pe-5">
+                                        <div class="text-muted small fw-bold mb-2 text-uppercase"
+                                            style="letter-spacing: 1px;">
+                                            Social Media
+                                        </div>
+                                        <h2 class="fw-bold m-0 h4" style="color: #1a7d8c; line-height: 1.2;">
+                                            Race Bicycle
+                                        </h2>
+                                    </div>
+                                    <a href="#"
+                                        class="btn rounded-circle d-flex align-items-center justify-content-center position-absolute"
+                                        style="width: 50px; height: 50px; background-color: #007d8c; color: white; right: 25px; top: 50%; transform: translateY(-50%);">
+                                        <span style="font-size: 20px; font-weight: bold;">&rsaquo;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="position-relative overflow-hidden m-3">
+                                <a href="img/project/project-image02.jpg" class="" data-fancybox="gallery"
+                                    data-caption="XS Max">
+                                    <img src="img/project/project-image02.jpg" class="w-100 d-block"
+                                        alt="Project Image">
+                                </a>
+                                <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 bg-white p-4 shadow-lg"
+                                    style="width: 90%; max-width: 550px; border-radius: none; min-height: 20px;">
+                                    <div class="pe-5">
+                                        <div class="text-muted small fw-bold mb-2 text-uppercase"
+                                            style="letter-spacing: 1px;">
+                                            Social Media
+                                        </div>
+                                        <h2 class="fw-bold m-0 h4" style="color: #1a7d8c; line-height: 1.2;">
+                                            Race Bicycle
+                                        </h2>
+                                    </div>
+                                    <a href="#"
+                                        class="btn rounded-circle d-flex align-items-center justify-content-center position-absolute"
+                                        style="width: 50px; height: 50px; background-color: #007d8c; color: white; right: 25px; top: 50%; transform: translateY(-50%);">
+                                        <span style="font-size: 20px; font-weight: bold;">&rsaquo;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="position-relative overflow-hidden m-3">
+                                <a href="img/project/project-image03.jpg" class="" data-fancybox="gallery"
+                                    data-caption="XS Max">
+                                    <img src="img/project/project-image03.jpg" class="w-100 d-block"
+                                        alt="Project Image">
+                                </a>
+                                <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 bg-white p-4 shadow-lg"
+                                    style="width: 90%; max-width: 550px; border-radius: none; min-height: 20px;">
+                                    <div class="pe-5">
+                                        <div class="text-muted small fw-bold mb-2 text-uppercase"
+                                            style="letter-spacing: 1px;">
+                                            Social Media
+                                        </div>
+                                        <h2 class="fw-bold m-0 h4" style="color: #1a7d8c; line-height: 1.2;">
+                                            Race Bicycle
+                                        </h2>
+                                    </div>
+                                    <a href="#"
+                                        class="btn rounded-circle d-flex align-items-center justify-content-center position-absolute"
+                                        style="width: 50px; height: 50px; background-color: #007d8c; color: white; right: 25px; top: 50%; transform: translateY(-50%);">
+                                        <span style="font-size: 20px; font-weight: bold;">&rsaquo;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="position-relative overflow-hidden m-3">
+                                <a href="img/project/project-image04.jpg" class="" data-fancybox="gallery"
+                                    data-caption="XS Max">
+                                    <img src="img/project/project-image04.jpg" class="w-100 d-block"
+                                        alt="Project Image">
+                                </a>
+                                <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 bg-white p-4 shadow-lg"
+                                    style="width: 90%; max-width: 550px; border-radius: none; min-height: 20px;">
+                                    <div class="pe-5">
+                                        <div class="text-muted small fw-bold mb-2 text-uppercase"
+                                            style="letter-spacing: 1px;">
+                                            Social Media
+                                        </div>
+                                        <h2 class="fw-bold m-0 h4" style="color: #1a7d8c; line-height: 1.2;">
+                                            Race Bicycle
+                                        </h2>
+                                    </div>
+                                    <a href="#"
+                                        class="btn rounded-circle d-flex align-items-center justify-content-center position-absolute"
+                                        style="width: 50px; height: 50px; background-color: #007d8c; color: white; right: 25px; top: 50%; transform: translateY(-50%);">
+                                        <span style="font-size: 20px; font-weight: bold;">&rsaquo;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="position-relative overflow-hidden m-3">
+                                <a href="img/project/project-image05.jpg" class="" data-fancybox="gallery"
+                                    data-caption="XS Max">
+                                    <img src="img/project/project-image05.jpg" class="w-100 d-block"
+                                        alt="Project Image">
+                                </a>
+                                <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 bg-white p-4 shadow-lg"
+                                    style="width: 90%; max-width: 550px; border-radius: none; min-height: 20px;">
+                                    <div class="pe-5">
+                                        <div class="text-muted small fw-bold mb-2 text-uppercase"
+                                            style="letter-spacing: 1px;">
+                                            Social Media
+                                        </div>
+                                        <h2 class="fw-bold m-0 h4" style="color: #1a7d8c; line-height: 1.2;">
+                                            Race Bicycle
+                                        </h2>
+                                    </div>
+                                    <a href="#"
+                                        class="btn rounded-circle d-flex align-items-center justify-content-center position-absolute"
+                                        style="width: 50px; height: 50px; background-color: #007d8c; color: white; right: 25px; top: 50%; transform: translateY(-50%);">
+                                        <span style="font-size: 20px; font-weight: bold;">&rsaquo;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg">
+        <div class="row justify-content-center align-items-center py-5">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
+                <a href="img/female-avatar.png" class="" data-fancybox="gallery" data-caption="XS Max">
+                    <img src="img/female-avatar.png" alt="" class="w-100">
+                </a>
+            </div>
+            <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1000">
+                <div class="text-secondary">
+                    CLIENT TESTIMONIALS
+                </div>
+                <div class="h4 py-3" style="line-height: 35px;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi amet ut accusantium iusto a,
+                    facere dignissimos sunt beatae earum numquam?
+                </div>
+                <div>
+                    <span class="text-warning">mary loe</span> / Digital Agency(CEO)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark">
+        <div class="container-lg text-white-50 text-center text-lg-start">
+            <div class="row align-items-center pt-5">
+                <div class="col-lg-4 text-white text-center text-lg-start h3">
+                    We make creative <br> <span class="text-warning">brands</span> only.
+                </div>
+                <div class="col-lg-4">
+                    <div class="h5 pb-3">
+                        CONTACT INFO
+                    </div>
+                    <div class="pb-1">
+                        <i class="bi bi-telephone-fill text-warning"></i>
+                        +99 080 070 4224
+                    </div>
+                    <div>
+                        <i class="bi bi-envelope-fill text-warning"></i>
+                        hello@company.com
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="h5 pb-3">
+                        OUR STUDIO
+                    </div>
+                    <div class="pb-1">
+                        <i class="bi bi-house-door-fill text-warning"></i>
+                        Lorem ipsum dolor sit, amet <br> consectetur adipisicing elit. <br> Temporibus, sit unde.
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5 align-items-center">
+                <div class="col-lg-4 text-center text-lg-start">
+                    Copyright © 2020 Your Company
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row justify-content-center">
+                        <div class="col-auto">Stories</div>
+                        <div class="col-auto">Work with us</div>
+                        <div class="col-auto">Privacy</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-google"></i>
+                        <i class="bi bi-behance"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/splide.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            focus: 'center',   // ← центрируем активный слайд
+            gap: '2rem',
+            padding: {
+                left: '20%',
+                right: '20%',
+            },
+            arrows: false,
+            pagination: false,
+            drag: true,
+
+            breakpoints: {
+                992: {
+                    padding: {
+                        left: '10%',
+                        right: '10%',
+                    },
+                },
+                576: {
+                    padding: {
+                        left: '5%',
+                        right: '5%',
+                    },
+                }
+            }
+        }).mount();
+    </script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            'animated': true,
+        });
+    </script>
+    <script>
+
+        AOS.init({
+            once: true,
+        });
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
